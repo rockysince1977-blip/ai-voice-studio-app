@@ -14,6 +14,7 @@ import { User, Sparkles, Settings } from "lucide-react";
 import Link from "next/link";
 import SidebarMenuItems from "./sidebar-menu-items";
 import MobileSidebarClose from "./mobile-sidebar-close";
+import Credits from "./credits";
 async function AppSidebar() {
   return (
     <Sidebar className="from-background to-mute/20 bg-gradient-to0b border-r-0">
@@ -42,6 +43,7 @@ async function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
+        <Credits/>
         <UserButton
           variant="outline"
           hideSettings={true}
@@ -60,6 +62,7 @@ async function AppSidebar() {
           ]}
         ></UserButton>
       </SidebarFooter>
+
     </Sidebar>
   );
 }
