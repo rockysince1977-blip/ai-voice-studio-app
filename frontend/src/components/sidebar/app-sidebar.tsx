@@ -15,6 +15,7 @@ import Link from "next/link";
 import SidebarMenuItems from "./sidebar-menu-items";
 import MobileSidebarClose from "./mobile-sidebar-close";
 import Credits from "./credits";
+import Upgrade from "./upgrade";
 async function AppSidebar() {
   return (
     <Sidebar className="from-background to-mute/20 bg-gradient-to0b border-r-0">
@@ -44,6 +45,7 @@ async function AppSidebar() {
       </SidebarContent>
       <SidebarFooter>
         <Credits/>
+        <Upgrade/>
         <UserButton
           variant="outline"
           hideSettings={true}
